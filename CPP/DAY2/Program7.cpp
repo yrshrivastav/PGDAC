@@ -1,4 +1,5 @@
 #include<iostream>
+#include <cmath>
 using namespace std;
 
 int main(){
@@ -10,26 +11,50 @@ int main(){
         Display menu, ask choice to the user, depending on choice accept the parameters and perform the 
         operation. Continue this process until user selects exit option.
     */
-    int number1;
-    int number2;
-    
-    cout<<"Enter number1 and number2 to find gcd : "<<endl;
-    cin>>number1;
-    cin>>number2;
-    int common;
-    int i,j;
-    cout<<"GCD of "<<number1<<" and "<<number2<<" : ";
-    for( i=number1/2; i>0; i--){
-        if(number1%i==0){
-            for( j=i;j<=i;j++){
-                if(number2%j==0){
-                    cout<<j<<" ";
-                    i=0;
-                    break;
-                }
-            }    
+    int choice;
+    do {
+        cout << "\n====== MENU ======\n";
+        cout << "1. Compute area of Circle\n";
+        cout << "2. Compute area of Rectangle\n";
+        cout << "3. Compute area of Triangle\n";
+        cout << "4. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch(choice) {
+            case 1: {
+                double radius;
+                cout << "Enter radius of circle: ";
+                cin >> radius;
+                double area = M_PI * radius * radius;
+                cout << "Area of Circle = " << area << endl;
+                break;
+            }
+            case 2: {
+                double length, breadth;
+                cout << "Enter length and breadth of rectangle: ";
+                cin >> length >> breadth;
+                double area = length * breadth;
+                cout << "Area of Rectangle = " << area << endl;
+                break;
+            }
+            case 3: {
+                double base, height;
+                cout << "Enter base and height of triangle: ";
+                cin >> base >> height;
+                double area = 0.5 * base * height;
+                cout << "Area of Triangle = " << area << endl;
+                break;
+            }
+            case 4:
+                cout << "Exiting program!" << endl;
+                break;
+
+            default:
+                cout << "Invalid choice! Please try again." << endl;
         }
-    }
-    cout<<endl;
+
+    } while(choice != 4);
+
     return 0;
 }
