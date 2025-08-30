@@ -8,7 +8,7 @@ int main(){
         search number is present in array or not
     */
     cout<<"1: Search for number in array 0: Exit the application"<<endl;
-    int choice, size, number, present=0;
+    int choice, size, number, present;
     cout<<"Enter size of array"<<endl;
     cin>>size;
     int arr[size]; 
@@ -17,7 +17,7 @@ int main(){
         cin>>arr[i];
     }
     while(choice!=0){
-        
+        present=0;
         cout<<"Enter your choice"<<endl;
         cin>>choice;
         switch(choice){
