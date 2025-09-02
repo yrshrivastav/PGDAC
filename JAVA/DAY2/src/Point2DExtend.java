@@ -35,5 +35,6 @@ public class Point2DExtend {
             Point2DExtend p = new Point2DExtend(sc.nextInt(), sc.nextInt());
             System.out.println(p.show());
             System.out.println("Both Points are equal : "+p.isEqual());
+            sc.close();
         }
 }

@@ -47,5 +47,6 @@ public class Point2DExtendMore {
             System.out.println("Both Points are equal : "+p.isEqual());
             System.out.println("Both Points are equal : "+p1.isEqual());
             p.calculateDistance(p1);
+            sc.close();
         }
 }

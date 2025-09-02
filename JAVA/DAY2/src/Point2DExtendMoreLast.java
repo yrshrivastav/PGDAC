@@ -48,6 +48,6 @@ class Main{
             Point2DExtendMoreLast p1 = new Point2DExtendMoreLast(sc.nextInt(), sc.nextInt());
             System.out.println(p.show(p1));
             System.out.println(p.isEqual(p1));
-            
+            sc.close();
     }
 }

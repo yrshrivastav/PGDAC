@@ -29,6 +29,7 @@ public class Point2D {
             System.out.println("Enter coordinates X and Y");
             Point2D p = new Point2D(sc.nextInt(), sc.nextInt());
             System.out.println(p.show());
+            sc.close();
         }
     
 }
