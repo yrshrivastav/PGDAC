@@ -2,8 +2,8 @@ import java.util.Scanner;
 public class Point2D {
     /*
      * 
-            Create a  class Point2D   for representing a point in x & y(int) co-ordinate system.
-            (Tight encapsulation please !)
+            4   Create a  class Point2D   for representing a point in x & y(int) co-ordinate system.
+                (Tight encapsulation please !)
 
             4.1 Create a parameterized constructor to accept x & y co-ords.
 
